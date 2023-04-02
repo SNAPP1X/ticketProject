@@ -64,3 +64,4 @@ C:\Users\snappix\Source\Repos\SNAPP1X\ticketProject\TicketsProject\obj\Debug\net
 C:\Users\snappix\Source\Repos\SNAPP1X\ticketProject\TicketsProject\obj\Debug\net7.0-windows\TicketsProject.pdb
 C:\Users\snappix\Source\Repos\SNAPP1X\ticketProject\TicketsProject\obj\Debug\net7.0-windows\TicketsProject.genruntimeconfig.cache
 C:\Users\snappix\Source\Repos\SNAPP1X\ticketProject\TicketsProject\obj\Debug\net7.0-windows\ref\TicketsProject.dll
+C:\Users\snappix\Source\Repos\SNAPP1X\ticketProject\TicketsProject\obj\Debug\net7.0-windows\TicketsProject.RegisterForm.resources

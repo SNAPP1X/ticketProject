@@ -45,8 +45,6 @@ public partial class LoginForm : Form
 
     private void LoginBtn_Click(object sender, EventArgs e)
     {
-        String loginUser = log_win.Text;
-        String passUser = pass_win.Text;
 
         DB db = new DB();
 
@@ -54,20 +52,20 @@ public partial class LoginForm : Form
 
         SqlDataAdapter adapter = new SqlDataAdapter();
 
-        SqlCommand command = new SqlCommand("SELECT * FROM 'login' WHERE 'login' = @lU AND 'password' = @pU", db.getConnection());
-        command.Parameters.Add("@lU", SqlDbType.VarChar).Value = loginUser;
-        command.Parameters.Add("@pU", SqlDbType.VarChar).Value = passUser;
+        SqlCommand command = new SqlCommand("select * from UserAPP where login = @login and password = @password", db.getConnection());
+        command.Parameters.Add("@login", SqlDbType.NVarChar).Value = log_win.Text;
+        command.Parameters.Add("@password", SqlDbType.NVarChar).Value = pass_win.Text;
 
         adapter.SelectCommand = command;
         adapter.Fill(table);
 
-        if(table.Rows.Count > 0)
+        if (table.Rows.Count > 0)
         {
-            MessageBox.Show("?? ????? ???? ??????");
+            MessageBox.Show("Вы успешно вошли в аккаунт");
         }
         else
         {
-            MessageBox.Show("?? ??? ??????");
+            MessageBox.Show("Проверьте введенные данные и повтори попытку");
         }
     }
 }
