@@ -1,3 +1,6 @@
+using System.Data.SqlClient;
+using System.Data;
+
 namespace TicketsProject;
 
 public partial class LoginForm : Form
@@ -38,5 +41,33 @@ public partial class LoginForm : Form
     private void mainPanel_MouseDown(object sender, MouseEventArgs e)
     {
         LastPoint = new Point(e.X, e.Y);
+    }
+
+    private void LoginBtn_Click(object sender, EventArgs e)
+    {
+        String loginUser = log_win.Text;
+        String passUser = pass_win.Text;
+
+        DB db = new DB();
+
+        DataTable table = new DataTable();
+
+        SqlDataAdapter adapter = new SqlDataAdapter();
+
+        SqlCommand command = new SqlCommand("SELECT * FROM 'login' WHERE 'login' = @lU AND 'password' = @pU", db.getConnection());
+        command.Parameters.Add("@lU", SqlDbType.VarChar).Value = loginUser;
+        command.Parameters.Add("@pU", SqlDbType.VarChar).Value = passUser;
+
+        adapter.SelectCommand = command;
+        adapter.Fill(table);
+
+        if(table.Rows.Count > 0)
+        {
+            MessageBox.Show("?? ????? ???? ??????");
+        }
+        else
+        {
+            MessageBox.Show("?? ??? ??????");
+        }
     }
 }
