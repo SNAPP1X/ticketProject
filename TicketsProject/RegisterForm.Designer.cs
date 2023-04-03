@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             mainPanel = new Panel();
+            loginLabel = new Label();
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
             userSurname = new TextBox();
@@ -50,6 +51,7 @@
             // mainPanel
             // 
             mainPanel.BackgroundImage = Properties.Resources.ticket_giveaways;
+            mainPanel.Controls.Add(loginLabel);
             mainPanel.Controls.Add(pictureBox4);
             mainPanel.Controls.Add(pictureBox3);
             mainPanel.Controls.Add(userSurname);
@@ -66,6 +68,20 @@
             mainPanel.Name = "mainPanel";
             mainPanel.Size = new Size(631, 438);
             mainPanel.TabIndex = 2;
+            // 
+            // loginLabel
+            // 
+            loginLabel.AutoSize = true;
+            loginLabel.BackColor = Color.Transparent;
+            loginLabel.Cursor = Cursors.Cross;
+            loginLabel.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            loginLabel.ForeColor = Color.Yellow;
+            loginLabel.Location = new Point(312, 367);
+            loginLabel.Name = "loginLabel";
+            loginLabel.Size = new Size(45, 15);
+            loginLabel.TabIndex = 14;
+            loginLabel.Text = "Войти";
+            loginLabel.Click += loginLabel_Click;
             // 
             // pictureBox4
             // 
@@ -219,6 +235,8 @@
             label1.TabIndex = 0;
             label1.Text = "Регистрация";
             label1.TextAlign = ContentAlignment.TopCenter;
+            label1.MouseDown += mainPanel_MouseDown;
+            label1.MouseMove += mainPanel_MouseMove;
             // 
             // RegisterForm
             // 
@@ -253,5 +271,6 @@
         private TextBox userName;
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
+        private Label loginLabel;
     }
 }

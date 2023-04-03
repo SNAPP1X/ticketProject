@@ -15,7 +15,7 @@ public partial class LoginForm : Form
 
     private void Form_close_click(object sender, EventArgs e)
     {
-        this.Close();
+        Application.Exit();
     }
 
     private void CloseBtn_MouseEnter(object sender, EventArgs e)
@@ -67,5 +67,12 @@ public partial class LoginForm : Form
         {
             MessageBox.Show("Проверьте введенные данные и повтори попытку");
         }
+    }
+
+    private void registerLabel_Click(object sender, EventArgs e)
+    {
+        this.Hide();
+        RegisterForm registerForm = new RegisterForm();
+        registerForm.Show();
     }
 }

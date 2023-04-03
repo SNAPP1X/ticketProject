@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             mainPanel = new Panel();
+            registerLabel = new Label();
             pictureBox2 = new PictureBox();
             pass_win = new TextBox();
             pictureBox1 = new PictureBox();
@@ -43,7 +44,9 @@
             // 
             // mainPanel
             // 
+            mainPanel.BackColor = Color.Transparent;
             mainPanel.BackgroundImage = Properties.Resources.ticket_giveaways;
+            mainPanel.Controls.Add(registerLabel);
             mainPanel.Controls.Add(pictureBox2);
             mainPanel.Controls.Add(pass_win);
             mainPanel.Controls.Add(pictureBox1);
@@ -52,10 +55,26 @@
             mainPanel.Controls.Add(LoginBtn);
             mainPanel.Controls.Add(label1);
             mainPanel.Dock = DockStyle.Fill;
+            mainPanel.Font = new Font("Arial Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            mainPanel.ForeColor = SystemColors.Control;
             mainPanel.Location = new Point(0, 0);
             mainPanel.Name = "mainPanel";
             mainPanel.Size = new Size(313, 438);
             mainPanel.TabIndex = 0;
+            // 
+            // registerLabel
+            // 
+            registerLabel.AutoSize = true;
+            registerLabel.BackColor = Color.Transparent;
+            registerLabel.Cursor = Cursors.Help;
+            registerLabel.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            registerLabel.ForeColor = Color.Yellow;
+            registerLabel.Location = new Point(100, 366);
+            registerLabel.Name = "registerLabel";
+            registerLabel.Size = new Size(115, 15);
+            registerLabel.TabIndex = 15;
+            registerLabel.Text = "Еще нет аккаунта";
+            registerLabel.Click += registerLabel_Click;
             // 
             // pictureBox2
             // 
@@ -182,5 +201,6 @@
         private PictureBox pictureBox2;
         private TextBox pass_win;
         private PictureBox pictureBox1;
+        private Label registerLabel;
     }
 }

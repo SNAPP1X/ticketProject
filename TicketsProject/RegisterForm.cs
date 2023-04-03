@@ -30,7 +30,7 @@ namespace TicketsProject
         }
         private void Form_close_click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void CloseBtn_MouseEnter(object sender, EventArgs e)
@@ -205,6 +205,13 @@ namespace TicketsProject
             {
                 return false;
             }
+        }
+
+        private void loginLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
         }
     }
 }
