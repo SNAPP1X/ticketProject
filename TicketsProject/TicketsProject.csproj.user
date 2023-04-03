@@ -4,10 +4,10 @@
     <_LastSelectedProfileId>C:\Users\snappix\Source\Repos\SNAPP1X\ticketProject\TicketsProject\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Update="LoginForm.cs">
+    <Compile Update="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="RegisterForm.cs">
+    <Compile Update="Forms\RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
