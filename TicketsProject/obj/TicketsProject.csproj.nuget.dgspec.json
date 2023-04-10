@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\snappix\\Source\\Repos\\SNAPP1X\\ticketProject\\TicketsProject\\TicketsProject.csproj": {}
+    "C:\\Users\\snappix\\source\\repos\\SNAPP1X\\ticketProject-main\\TicketsProject\\TicketsProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\snappix\\Source\\Repos\\SNAPP1X\\ticketProject\\TicketsProject\\TicketsProject.csproj": {
+    "C:\\Users\\snappix\\source\\repos\\SNAPP1X\\ticketProject-main\\TicketsProject\\TicketsProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\snappix\\Source\\Repos\\SNAPP1X\\ticketProject\\TicketsProject\\TicketsProject.csproj",
+        "projectUniqueName": "C:\\Users\\snappix\\source\\repos\\SNAPP1X\\ticketProject-main\\TicketsProject\\TicketsProject.csproj",
         "projectName": "TicketsProject",
-        "projectPath": "C:\\Users\\snappix\\Source\\Repos\\SNAPP1X\\ticketProject\\TicketsProject\\TicketsProject.csproj",
+        "projectPath": "C:\\Users\\snappix\\source\\repos\\SNAPP1X\\ticketProject-main\\TicketsProject\\TicketsProject.csproj",
         "packagesPath": "C:\\Users\\snappix\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\snappix\\Source\\Repos\\SNAPP1X\\ticketProject\\TicketsProject\\obj\\",
+        "outputPath": "C:\\Users\\snappix\\source\\repos\\SNAPP1X\\ticketProject-main\\TicketsProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -46,6 +46,10 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.4, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
