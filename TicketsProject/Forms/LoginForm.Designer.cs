@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             mainPanel = new Panel();
             registerLabel = new Label();
             pictureBox2 = new PictureBox();
@@ -67,11 +68,11 @@
             registerLabel.AutoSize = true;
             registerLabel.BackColor = Color.Transparent;
             registerLabel.Cursor = Cursors.Help;
-            registerLabel.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            registerLabel.ForeColor = Color.Yellow;
+            registerLabel.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            registerLabel.ForeColor = Color.FromArgb(255, 255, 128);
             registerLabel.Location = new Point(100, 366);
             registerLabel.Name = "registerLabel";
-            registerLabel.Size = new Size(115, 15);
+            registerLabel.Size = new Size(115, 16);
             registerLabel.TabIndex = 15;
             registerLabel.Text = "Еще нет аккаунта";
             registerLabel.Click += registerLabel_Click;
@@ -92,7 +93,7 @@
             // 
             pass_win.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pass_win.Cursor = Cursors.IBeam;
-            pass_win.Font = new Font("Times New Roman", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            pass_win.Font = new Font("Comic Sans MS", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             pass_win.Location = new Point(119, 236);
             pass_win.Multiline = true;
             pass_win.Name = "pass_win";
@@ -118,7 +119,7 @@
             CloseBtn.AutoSize = true;
             CloseBtn.BackColor = Color.Transparent;
             CloseBtn.Cursor = Cursors.Hand;
-            CloseBtn.Font = new Font("Arial Black", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            CloseBtn.Font = new Font("Comic Sans MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             CloseBtn.ForeColor = Color.White;
             CloseBtn.Location = new Point(279, 0);
             CloseBtn.Name = "CloseBtn";
@@ -133,7 +134,7 @@
             // 
             log_win.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             log_win.Cursor = Cursors.IBeam;
-            log_win.Font = new Font("Times New Roman", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            log_win.Font = new Font("Comic Sans MS", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             log_win.Location = new Point(119, 149);
             log_win.Multiline = true;
             log_win.Name = "log_win";
@@ -144,13 +145,13 @@
             // LoginBtn
             // 
             LoginBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            LoginBtn.BackColor = Color.FromArgb(255, 128, 255);
+            LoginBtn.BackColor = Color.FromArgb(255, 27, 68);
             LoginBtn.Cursor = Cursors.Hand;
             LoginBtn.FlatAppearance.BorderSize = 0;
             LoginBtn.FlatAppearance.MouseDownBackColor = Color.Purple;
             LoginBtn.FlatAppearance.MouseOverBackColor = Color.Fuchsia;
             LoginBtn.FlatStyle = FlatStyle.Flat;
-            LoginBtn.Font = new Font("Bookman Old Style", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            LoginBtn.Font = new Font("Comic Sans MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             LoginBtn.Location = new Point(104, 324);
             LoginBtn.Name = "LoginBtn";
             LoginBtn.Size = new Size(111, 39);
@@ -181,6 +182,7 @@
             ClientSize = new Size(313, 438);
             Controls.Add(mainPanel);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";

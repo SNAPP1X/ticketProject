@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
             mainPanel = new Panel();
             loginLabel = new Label();
             pictureBox4 = new PictureBox();
@@ -73,12 +74,12 @@
             // 
             loginLabel.AutoSize = true;
             loginLabel.BackColor = Color.Transparent;
-            loginLabel.Cursor = Cursors.Cross;
-            loginLabel.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            loginLabel.ForeColor = Color.Yellow;
-            loginLabel.Location = new Point(292, 367);
+            loginLabel.Cursor = Cursors.PanWest;
+            loginLabel.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            loginLabel.ForeColor = Color.FromArgb(255, 255, 128);
+            loginLabel.Location = new Point(290, 354);
             loginLabel.Name = "loginLabel";
-            loginLabel.Size = new Size(45, 15);
+            loginLabel.Size = new Size(44, 16);
             loginLabel.TabIndex = 14;
             loginLabel.Text = "Войти";
             loginLabel.Click += loginLabel_Click;
@@ -88,7 +89,7 @@
             pictureBox4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.Image = Properties.Resources.user;
-            pictureBox4.Location = new Point(351, 112);
+            pictureBox4.Location = new Point(310, 98);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(59, 52);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -100,7 +101,7 @@
             pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox3.BackColor = Color.Transparent;
             pictureBox3.Image = Properties.Resources.user;
-            pictureBox3.Location = new Point(14, 112);
+            pictureBox3.Location = new Point(14, 98);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(59, 52);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -111,11 +112,11 @@
             // 
             userSurname.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             userSurname.Cursor = Cursors.IBeam;
-            userSurname.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            userSurname.Location = new Point(416, 112);
+            userSurname.Font = new Font("Comic Sans MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            userSurname.Location = new Point(384, 112);
             userSurname.Multiline = true;
             userSurname.Name = "userSurname";
-            userSurname.Size = new Size(193, 38);
+            userSurname.Size = new Size(225, 38);
             userSurname.TabIndex = 11;
             userSurname.TextAlign = HorizontalAlignment.Center;
             userSurname.Enter += userSurname_Enter;
@@ -125,11 +126,11 @@
             // 
             userName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             userName.Cursor = Cursors.IBeam;
-            userName.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            userName.Font = new Font("Comic Sans MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             userName.Location = new Point(79, 112);
             userName.Multiline = true;
             userName.Name = "userName";
-            userName.Size = new Size(193, 38);
+            userName.Size = new Size(211, 38);
             userName.TabIndex = 10;
             userName.TextAlign = HorizontalAlignment.Center;
             userName.Enter += userName_Enter;
@@ -140,7 +141,7 @@
             pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = Properties.Resources._lock;
-            pictureBox2.Location = new Point(351, 201);
+            pictureBox2.Location = new Point(310, 187);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(59, 52);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -151,13 +152,14 @@
             // 
             pass_win.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pass_win.Cursor = Cursors.IBeam;
-            pass_win.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            pass_win.Location = new Point(416, 201);
+            pass_win.Font = new Font("Comic Sans MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            pass_win.Location = new Point(384, 201);
             pass_win.Multiline = true;
             pass_win.Name = "pass_win";
-            pass_win.Size = new Size(193, 38);
+            pass_win.Size = new Size(225, 38);
             pass_win.TabIndex = 8;
             pass_win.TextAlign = HorizontalAlignment.Center;
+            pass_win.TextChanged += pass_is_empty;
             pass_win.Enter += pass_win_Enter;
             pass_win.Leave += pass_win_Leave;
             // 
@@ -166,7 +168,7 @@
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.login__1_;
-            pictureBox1.Location = new Point(14, 201);
+            pictureBox1.Location = new Point(14, 187);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(59, 52);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -195,11 +197,11 @@
             // 
             log_win.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             log_win.Cursor = Cursors.IBeam;
-            log_win.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            log_win.Font = new Font("Comic Sans MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             log_win.Location = new Point(79, 201);
             log_win.Multiline = true;
             log_win.Name = "log_win";
-            log_win.Size = new Size(193, 38);
+            log_win.Size = new Size(211, 38);
             log_win.TabIndex = 4;
             log_win.TextAlign = HorizontalAlignment.Center;
             log_win.Enter += log_win_Enter;
@@ -208,14 +210,15 @@
             // RegisterBtn
             // 
             RegisterBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            RegisterBtn.BackColor = Color.FromArgb(255, 128, 255);
+            RegisterBtn.BackColor = Color.FromArgb(255, 27, 68);
             RegisterBtn.Cursor = Cursors.Hand;
             RegisterBtn.FlatAppearance.BorderSize = 0;
             RegisterBtn.FlatAppearance.MouseDownBackColor = Color.Purple;
             RegisterBtn.FlatAppearance.MouseOverBackColor = Color.Fuchsia;
             RegisterBtn.FlatStyle = FlatStyle.Flat;
-            RegisterBtn.Font = new Font("Bookman Old Style", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            RegisterBtn.Location = new Point(13, 325);
+            RegisterBtn.Font = new Font("Comic Sans MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            RegisterBtn.ForeColor = Color.White;
+            RegisterBtn.Location = new Point(14, 312);
             RegisterBtn.Name = "RegisterBtn";
             RegisterBtn.Size = new Size(596, 39);
             RegisterBtn.TabIndex = 3;
@@ -245,6 +248,7 @@
             ClientSize = new Size(631, 438);
             Controls.Add(mainPanel);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "RegisterForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "RegisterForm";

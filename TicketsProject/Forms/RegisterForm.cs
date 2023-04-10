@@ -100,6 +100,14 @@ namespace TicketsProject
             }
         }
 
+        private void pass_is_empty(object sender, EventArgs e)
+        {
+            if (pass_win.Text.Length <= 0)
+            {
+                pass_win.PasswordChar = (char)0;
+            }
+        }
+
         private void userName_Leave(object sender, EventArgs e)
         {
             if (userName.Text == "")

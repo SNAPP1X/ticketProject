@@ -4,10 +4,31 @@
     <_LastSelectedProfileId>C:\Users\snappix\Source\Repos\SNAPP1X\ticketProject\TicketsProject\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="Samples\SaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Samples\PassagForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Samples\PlaceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Samples\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Samples\childForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Samples\trainForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

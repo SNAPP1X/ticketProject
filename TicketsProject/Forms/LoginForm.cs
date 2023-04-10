@@ -61,7 +61,9 @@ public partial class LoginForm : Form
 
         if (table.Rows.Count > 0)
         {
-            MessageBox.Show("Вы успешно вошли в аккаунт");
+            this.Hide();
+            MainForm main = new MainForm();
+            main.Show();
         }
         else
         {

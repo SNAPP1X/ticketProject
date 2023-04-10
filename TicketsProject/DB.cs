@@ -10,7 +10,8 @@ namespace TicketsProject
 {
     internal class DB
     {
-        SqlConnection connection = new SqlConnection("Data Source=WIN-E818I8RJBE2\\SNAPPIXPC;Initial Catalog=Automize_ticket;Integrated Security=True");
+        SqlConnection connection = new SqlConnection("Data Source=(local)\\SNAPPIXPC;Initial Catalog=Automize_ticket;Integrated Security=True");
+        //SqlConnection connection = new SqlConnection("Data Source=215PC10\\SQLEXPRESS;Initial Catalog=Automize_ticket;Integrated Security=True");
 
         public void openConnection()
         {
